@@ -241,12 +241,24 @@ body {
   display: flex;
 }
 
-.features-list-item {
+/* .features-list-item {
   width: 270px;
-}
+} */
 
 .features-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.features-svg-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+
+  background-color: #f5f4fa;
 }
 
 .features-title {
@@ -347,9 +359,36 @@ body {
   font-weight: 400;
 }
 
+.social-links-list {
+  display: flex;
+  padding-right: 32px;
+  padding-bottom: 24px;
+  padding-left: 32px;
+}
+
+.social-links-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.social-link-svg {
+  fill: #afb1b8;
+}
+
 .social-link:hover,
-.social-link:focus {
-  color: var(--accent-color);
+.social-link:focus,
+.social-link:hover .social-link-svg,
+.social-link:focus .social-link-svg {
+  fill: #ffffff;
+  background-color: var(--accent-color);
 }
 
 /* Clients */
@@ -411,12 +450,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-address-link:hover,
+/* .footer-address-link:hover,
 .footer-address-link:focus,
 .footer-contacts-link:hover,
 .footer-contacts-link:focus {
   color: var(--accent-color);
-}
+} */
 
 .footer-subtitle {
   margin-bottom: 20px;
@@ -426,12 +465,28 @@ body {
   text-transform: uppercase;
 }
 
-.social-links-list {
+.footer-social-links-list {
   display: flex;
 }
 
-.social-links-list-item:not(:last-child) {
+.footer-social-links-list-item:not(:last-child) {
   margin-right: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* PORTFOLIO */
