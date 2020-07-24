@@ -132,10 +132,10 @@ body {
 .navigation-link {
   padding-top: 32px;
   padding-bottom: 28px;
-  color: var(--title-text-color);
 
   font-weight: 500;
   letter-spacing: 0.02em;
+  color: var(--title-text-color);
 }
 
 .navigation-link.active {
@@ -171,9 +171,23 @@ body {
 }
 
 .contacts-list-item-link {
+  display: flex;
+  align-items: center;
+
   color: var(--primary-text-color);
   font-weight: 500;
   letter-spacing: 0.02em;
+}
+
+.contacts-svg {
+  margin-right: 10px;
+
+  fill: var(--primary-text-color);
+}
+
+.contacts-list-item-link:hover .contacts-svg,
+.contacts-list-item-link:focus .contacts-svg {
+  fill: var(--accent-color);
 }
 
 /* Hero */
